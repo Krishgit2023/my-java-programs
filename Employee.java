@@ -1,20 +1,20 @@
-package Abstraction;
+package assignments;
 
-abstract public class Employee {
+import java.util.Scanner;
+
+public class Employee {
 	
-	private int paymentperhour;
+	double basicpay;
+	double deduction;
+	double bonus;
 	
-	public int getPaymentperhour() {
-		return paymentperhour;
+	Scanner get = new Scanner(System.in);
+	Employee(){
+		System.out.println("Employee basic pay : ");
+		basicpay = get.nextDouble();
+		System.out.println("Employee deductions : ");
+		deduction = get.nextDouble();
+		System.out.println("Employee bonus : ");
+		bonus = get.nextDouble();
 	}
-
-	public void setPaymentperhour(int paymentperhour) {
-		this.paymentperhour = paymentperhour;
-	}
-
-	public Employee(int paymentperhour ) {
-		this.paymentperhour = paymentperhour;
-	}
-
-	public abstract int calculateSalary();
 }

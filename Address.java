@@ -1,18 +1,11 @@
-package package1;
+package assignments;
 
-public class Address {
+public class Address extends Student {
 	
-	String city, state, country;
-	int zipcode;
+	String address = "ABC, House No:1 , Tvm";
 	
-	public Address(String city, String state, String country, int zipcode) {
-		super();
-		this.city = city;
-		this.state = state;
-		this.country = country;
-		this.zipcode = zipcode;
+	public void getdetails() {
+		System.out.println("Student's address is " +address);
 	}
-	
-	
 
 }

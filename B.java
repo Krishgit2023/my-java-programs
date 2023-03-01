@@ -1,6 +1,7 @@
-package assignments;
+package multipleinterface;
 
 public interface B {
-
+	
 	void display();
+
 }
